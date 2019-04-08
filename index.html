@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Free Bootstrap Parallax Template - Green Fire by Binarytheme</title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+        var name, phone_number, email, queries, payment_response, form_status;
+    
+      function onPaymentHandler(response){
+        // debugger
+        payment_response = response;
+        // console.log(response);
+        // console.log(name);
+        $(".fs_name").val(name);
+        $(".fs_phone_number").val(phone_number);
+        $(".fs_email").val(email);
+        $(".fs_queries").val(queries);
+        $(".fs_paymet_status").val(payment_response.status);
+        $(".fs_submit").click();
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        // directPaymentMode: 'net banking',
+        handlers: {
+          // onOpen: onOpenHandler,
+          // onClose: onCloseHandler,
+          onSuccess: onPaymentHandler,
+          onFailure: onPaymentHandler
+        }
+      });
+
+      
+      function onButtonClick() {
+        // debugger
+
+        name = $("input[name=name]").val();
+        phone_number = $("input[name=phone_number]").val();
+        email = $("input[name=email]").val();
+        queries = $('textarea[name="queries"]').val();
+
+        if ([name, phone_number, email, queries].includes('')) {
+            form_status = "Please fill all the mandatory fields";
+            $(".error_text").text(form_status);
+            $(".brain-gym-error").fadeIn();
+        }else{
+            Instamojo.open('https://www.instamojo.com/@Spini/lf4dd11ef8ad748c1991efd8fdbf42b43/');
+        }
+      }
+    </script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <!--  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="htttp://www.binarytheme.com">BRAIN BOX </a>
+            </div>
+            
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">HOME</a>
+                    </li>
+                    <li><a href="#services">SERVICES</a>
+                    </li>
+
+                    <li><a href="#price-sec">PRICING</a>
+                    </li>
+
+                    <li><a href="#contact-sec">CONTACT</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            
+        </div>
+       
+    </nav>
+          </header> -->
+    <!--End Navigation -->
+
+    
+
+  
+    <!--Header section  -->
+ <a class="a-logo1" href=""><img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/brain-gym/Brainbox-Logo.png" alt="brain-box" ></a>
+    
+    <div id="home">
+    <div class="container" >
+        <div class="row ">
+            <div class="col-md-9 col-sm-9">
+                <h1 class="head-main">Refreshing summer camp for Kids from 8 to14 years!</h1>
+                <span class="head-sub-main">Brainbox is unveiling their memory improvement classes this summer! </span>
+                <div class="head-last">
+
+                    Also, get a DMIT test for your kid at the lowest prize in Chennai!
+                </div>
+
+            </div>
+               <div class="col-md-3 col-sm-3">
+                   <div class="div-trans text-center">
+                       <h3>Request a Quote </h3>
+                        <div style="display: inline-block;">
+                       
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Phone number" name="phone_number">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" required="required" placeholder="Email address" name="email">
+                                </div>
+                            </div>
+                        
+                        
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="Textarea1" required="required" class="form-control" rows="3" placeholder="Queries" name="queries"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-success" onclick="onButtonClick();">Submit Here </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-danger brain-gym-error">
+                                  <strong class="error_text"></strong>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+   
+            </div>
+
+        </div>
+    </div>
+          </div>
+    <!--End Header section  -->
+    <!--Services Section-->
+    <section  id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>Train kids to achieve peak performance. Interesting games and memory techniques.</h2>
+                    <h3>Games and techniques to improve the working memory in kids. Excellent results in a short span. Contact now for a free seminar.</h3>
+                </div>
+
+            </div>
+
+            <div class="row text-center space-pad">
+                <div class="col-md-12">
+                    <img src="https://asset.lumosity.com/resources/landing_page_templates/857/science_to_games.png" width="75%">
+                </div>
+                <!-- <div class="col-md-3 col-sm-3">
+
+                    <div >
+
+                        <i class="fa fa-camera fa-4x main-color"></i>
+
+
+                        <h3>Responsive </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3">
+
+                    <div >
+
+                        <i class="fa fa-briefcase fa-4x main-color"></i>
+
+
+                        <h3>100% Free </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3">
+
+                    <div >
+
+                        <i class="fa fa-desktop fa-4x main-color"></i>
+
+
+                        <h3>Clean Code </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-3">
+
+                    <div>
+
+                        <i class="fa fa-folder fa-4x main-color"></i>
+
+
+                        <h3>Read to Use </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </p>
+
+                    </div>
+
+                </div> -->
+            </div>
+           <!--  <div class="row ">
+                <div class="col-md-6 col-sm-6">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="panel panel-default">
+                     
+                        <div class="panel-body">
+                            <ul class="nav nav-pills" style="background-color: #ECECEC;">
+                                <li class="active"><a href="#home-pills" data-toggle="tab">Home</a>
+                                </li>
+                                <li class=""><a href="#profile-pills" data-toggle="tab">Profile</a>
+                                </li>
+                                <li class=""><a href="#messages-pills" data-toggle="tab">Messages</a>
+                                </li>
+                                <li class=""><a href="#settings-pills" data-toggle="tab">Settings</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane fade  active in" id="home-pills">
+                                    <h4>Home Tab</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile-pills">
+                                    <h4>Profile Tab</h4>
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  officia deserunt mollit anim id est laborum.</p>
+
+                                </div>
+                                <div class="tab-pane fade" id="messages-pills">
+                                    <h4>Messages Tab</h4>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="tab-pane fade" id="settings-pills">
+                                    <h4>Settings Tab</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> -->
+        </div>
+
+
+    </section>
+     <!--End Services Section-->
+    <!--parallax one-->
+      <section  id="Parallax-one">
+    <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/brain-gym/brainbox-img.png" width="100%">
+                    <!-- <h2><i class="fa fa-desktop fa-3x"></i>&nbsp;Just Space </h2>
+                    <h4>
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </strong>
+                    </h4> -->
+                </div>
+
+            </div>
+
+
+        </div>
+          </section>
+    <!--./parallax one-->
+        <!-- Pricing Section -->
+    <section  id="price-sec">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <h4>The secret of learning faster is here. Contact us now for the exciting business opportunity.</h4>
+                <iframe width="80%" height="315" src="https://www.youtube.com/embed/U-ipLCgPxuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+            <!-- <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2">
+
+                    <h2>The secret of learning faster is here. Contact us now for the exciting business opportunity.</h2>
+                    <h4>
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </strong>
+                    </h4>
+                </div>
+
+            </div> -->
+            <!-- <div class="row text-center">
+
+                <div class="col-md-12 ">
+
+
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="plan ">
+                            <li class="plan-head">BASIC PLAN</li>
+                            <li class="main-price">$99 only</li>
+                            <li><strong>120 </strong>Users</li>
+                            <li><strong>10 </strong>Emails</li>
+                            <li><strong>12GB </strong>Spacce</li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-warning">SIGNUP HERE</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="plan plan-active">
+                            <li class="plan-head head-active ">SIMPLE PLAN</li>
+                            <li class="main-price">$199 only</li>
+                          <li><strong>120 </strong>Users</li>
+                            <li><strong>10 </strong>Emails</li>
+                            <li><strong>12GB </strong>Spacce</li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-primary">SIGNUP HERE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="plan">
+                            <li class="plan-head">VALUE PLAN</li>
+                            <li class="main-price">$299 only</li>
+                           <li><strong>120 </strong>Users</li>
+                            <li><strong>10 </strong>Emails</li>
+                            <li><strong>12GB </strong>Spacce</li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-danger">SIGNUP HERE</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="plan">
+                            <li class="plan-head">ADVANCE PLAN</li>
+                            <li class="main-price">$399 only</li>
+                            <li><strong>120 </strong>Users</li>
+                            <li><strong>10 </strong>Emails</li>
+                            <li><strong>12GB </strong>Spacce</li>
+                            <li class="bottom">
+                                <a href="#contact-sec" class="btn btn-success">SIGNUP HERE</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div> -->
+
+
+        </div>
+    </section>
+    <!--End Pricing Section -->
+    <!--parallax two-->
+    <!-- <section  id="Parallax-two">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 ">
+                     <h2><i class="fa fa-briefcase fa-3x"></i>&nbsp;Just Space </h2>
+                    <h4>
+                        <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                        </strong>
+                    </h4>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section> -->
+    <!--./parallax two-->
+    
+
+    <!-- Contact Section -->
+    <!-- <section  id="contact-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                
+                    <div id="social-icon">
+                          <strong> Address:</strong> 124/56 , Your Street Lane, USA.
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </section> -->
+
+    <!--End Contact Section -->
+    <!--footer Section -->
+    <!-- <div class="for-full-back " id="footer">
+        2014 www.yourdomain.com | All Right Reserved
+         
+    </div> -->
+    <!--End footer Section -->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="assets/plugins/bootstrap.js"></script>
+    <!-- PARALLAX SCRIPT   -->
+    <script src="assets/plugins/4jquery.parallax-1.1.3.js"></script>
+    <!-- CUSTOM SCRIPT   -->
+    <script src="assets/js/custom.js"></script>
+    <!-- Email Action -->
+    <form action="https://formspree.io/karthikeyan@spinircle.com" method="POST">
+      <input type="hidden" name="fs_name" class="fs_name">
+      <input type="hidden" name="fs_phone_number" class="fs_phone_number">
+      <input type="hidden" name="fs_email" class="fs_email">
+      <input type="hidden" name="fs_queries" class="fs_queries">
+      <input type="hidden" name="fs_paymet_status" class="fs_paymet_status">
+      <input type="hidden" name="_subject" value="Official Event Registration Form" />
+      <input type="hidden" name="_cc" value="" />
+    <input type="hidden" name="_next" value='/' />
+      <button type="submit" value="Send" style="display: none;" class="fs_submit">
+    </form>
+</body>
+</html>
