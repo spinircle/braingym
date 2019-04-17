@@ -444,12 +444,12 @@ p {
 }
 
 .welcome-thumb {
-    width: 45%;
+    width: 40%;
     position: absolute;
-    /*bottom: -130px;*/
-    top: 250px;
-    right: 85px;
+    /* bottom: -130px; */
+    top: 150px;
     z-index: 9;
+    right: 100px;
 }
 
 .welcome-thumb img {

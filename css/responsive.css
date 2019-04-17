@@ -148,10 +148,9 @@
         max-width: 100%;
     }
     .welcome-thumb {
-        width: 90%;
-        /*bottom: -74px;*/
-        top: 10%;
-        right: 0;
+        width: 100%;
+        top: 70%;
+        right: 5%;
     }
     .logo_area > a > h2 {
         font-size: 40px;
